@@ -26,9 +26,9 @@ class Movies:
         return self._movies[movie_id]
         
     # Replace entire movie listing with altered listing
-    #def edit_movie(self, movie_id, newMovieInfo):
-    #    self._movies[movie_id] = newMovieInfo
-    #    return
+    def edit_movie(self, movie_id, newMovieInfo):
+        self._movies[movie_id] = newMovieInfo
+        return
     
     # Replace entire movie listing with nothing
     #def delete_movie(self, movie_id):
