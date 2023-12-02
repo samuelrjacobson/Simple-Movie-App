@@ -35,10 +35,10 @@ async def get_movie(movie_id: int):
     return movies.get_movie_by_id(movie_id)
 
 # Create put method
-#@app.put("/movies/{movie_id}")
-#async def put_movie(movie_id: int, movie: Movie):
-#    movies.edit_movie(movie_id, movie.dict(exclude_unset=True))
-#    return movies.get_movie_id(movie_id)
+@app.put("/movies/{movie_id}")
+async def put_movie(movie_id: int, movie: Movie):
+    movies.edit_movie(movie_id, movie.dict(exclude_unset=True))
+    return movies.get_movie_id(movie_id)
 
 # Create delete method
 #@app.delete("/movies/{movie_id}")
