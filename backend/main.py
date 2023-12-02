@@ -41,11 +41,11 @@ async def put_movie(movie_id: int, movie: Movie):
     return movies.get_movie_id(movie_id)
 
 # Create delete method
-#@app.delete("/movies/{movie_id}")
-#async def delete_movie(movie_id: int):
-#    deleted_movie = movies.get_movie_by_id(movie_id)
-#    movies.delete_movie(movie_id)
-#    return deleted_movie
+@app.delete("/movies/{movie_id}")
+async def delete_movie(movie_id: int):
+    deleted_movie = movies.get_movie_by_id(movie_id)
+    movies.delete_movie(movie_id)
+    return deleted_movie
 
 # Create post method
 #@app.post("/movies/{movie_id}")
