@@ -36,12 +36,12 @@ class Movies:
         return
     
     # Add entered movie listing to end of list
-    #def add_movie(self, newMovieInfo):
-    #    Assign it an id (numerical, the next unused)
-    #    id = len(self._movies)
-    #    newMovieInfo['movie_id'] = id
-    #    self._movies.append(newMovieInfo)
-    #   return id
+    def add_movie(self, newMovieInfo):
+        #Assign it an id (numerical, the next unused)
+        id = len(self._movies)
+        newMovieInfo['movie_id'] = id
+        self._movies.append(newMovieInfo)
+        return id
         
 if __name__ == "__main__":
     movies = Movies('./movies.txt')

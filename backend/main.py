@@ -48,6 +48,6 @@ async def delete_movie(movie_id: int):
     return deleted_movie
 
 # Create post method
-#@app.post("/movies/{movie_id}")
-#async def post_movie(movie: New_movie):
-#    return movies.add_movie(movie.dict())
+@app.post("/movies/{movie_id}")
+async def post_movie(movie: New_movie):
+    return movies.add_movie(movie.dict())
