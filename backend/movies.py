@@ -31,9 +31,9 @@ class Movies:
         return
     
     # Replace entire movie listing with nothing
-    #def delete_movie(self, movie_id):
-    #    self._movies[movie_id] = None
-    #    return
+    def delete_movie(self, movie_id):
+        self._movies[movie_id] = None
+        return
     
     # Add entered movie listing to end of list
     #def add_movie(self, newMovieInfo):
